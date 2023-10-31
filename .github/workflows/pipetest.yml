@@ -12,15 +12,15 @@ runs-on: ubuntu-latest
 
 steps:
 - name: Checkout do Repositório
-uses: actions/checkout@v4
+  uses: actions/checkout@v4
 
 - name: Configurar Node.js
-uses: actions/setup-node@v3
-with:
-node-version: 18
+  uses: actions/setup-node@v3
+  with:
+    node-version: 18
 
 - name: Instalar Dependências
-run: npm install
+  run: npm install
 
 - name: Executar Testes
-run: npm run test
+  run: npm run test
